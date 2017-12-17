@@ -36,19 +36,33 @@
   				<b><%= link_to "مكتبتي", root_path, class: "navbar-brand" %></b>
 
   			</div>
+  			<ul class="nav navbar-nav navbar-right">
+  				<li>
+  					<%= link_to "Sign Up", new_user_registration_path %>
+  				</li>
+  				<% if user_signed_in? %>
+  					<li>
+  						<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  					</li>
+  				<% else %>
+  					<li>
+  						<%= link_to "Log In",new_user_session_path %>
+  					</li>
+  				<% end %>
+  			</ul>
   			
-
   		</div>
-
   	</div>
 
+<div class="container">
 
+	<p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p>
    <div align="center" class="arab">
    	<h1>مجموعة من أوراق العلماء</h1>
    	<h4>هذا الموقع يوفر معلومات عن أوراق العلماء السابقين حتى الآن</h4>
    </div>
-   <p class="notice"><%= notice %></p>
-   <p class="alert"><%= alert %></p>
     <%= yield %>
+  </div>
   </body>
 </html>
