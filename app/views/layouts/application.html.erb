@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookreview</title>
+    <title>مكتبتي | مجموعة من أوراق العلماء</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style type="text/css">
      
-     .arab
+     body
      {
 
      	font-family: mohamed-slama
@@ -30,10 +30,25 @@
   </head>
 
   <body>
+  	<div class="navbar navbar-default">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<b><%= link_to "مكتبتي", root_path, class: "navbar-brand" %></b>
+
+  			</div>
+  			
+
+  		</div>
+
+  	</div>
+
+
    <div align="center" class="arab">
    	<h1>مجموعة من أوراق العلماء</h1>
    	<h4>هذا الموقع يوفر معلومات عن أوراق العلماء السابقين حتى الآن</h4>
    </div>
+   <p class="notice"><%= notice %></p>
+   <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
