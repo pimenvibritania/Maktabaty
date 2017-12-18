@@ -1,7 +1,7 @@
 # <p align="center"> PROJECT PENGEMBANGAN APLIKASI WEB</p>
 <p align="center" ><img width="400" height="400" src= "app/assets/images/logo.png"/></p>
 
-<h1 align="center">مَكْتَبَتِي</h1>
+<h1 align="center">مكتبتي | مجموعة من أوراق العلماء</h1>
 
 ## Tools yang digunakan 
 
