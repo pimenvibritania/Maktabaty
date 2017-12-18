@@ -11,12 +11,14 @@ class BooksController < ApplicationController
 
 	def new
 		@book = current_user.books.build
+		@categories = Category.all.map { |c| [c.name, c.id]  }
 		
 	end
 
 	def create
 		@book = current_user.books.build(book_params)
-		
+		@book.category_id = params[ :category_id]
+
 		if @book.save
 			redirect_to root_path
 		else
@@ -45,7 +47,7 @@ class BooksController < ApplicationController
 
 	private
 		def book_params
-			params.require(:book).permit(:title, :description, :summary, :summaryeng, :author)
+			params.require(:book).permit(:title, :description, :summary, :summaryeng, :author, :category_id)
 
 		end
 
