@@ -1,7 +1,8 @@
 <%= simple_form_for @book do |f| %>
 	<%= f.input :title, label: "Book Title" %>
 	<%= f.input :description %>
-	<%= f.input :summary %>
+	<%= f.input :summary, label: "Arabic Summary" %>
+	<%= f.input :summaryeng, label: "Summary" %>
 	<%= f.input :author %>
 	<%= f.button :submit %>
 

@@ -26,6 +26,10 @@
      	font-family: mohamed-slama
 
      }
+
+
+
+   
     </style>
   </head>
 
@@ -33,7 +37,7 @@
   	<div class="navbar navbar-default">
   		<div class="container">
   			<div class="navbar-header">
-  				<b><%= link_to "مكتبتي", root_path, class: "navbar-brand" %></b>
+  				<b><%= link_to "مَكْتَبَتِي", root_path, class: "navbar-brand" %></b>
 
   			</div>
   			<ul class="nav navbar-nav navbar-right">
@@ -51,6 +55,13 @@
   				<% end %>
   			</ul>
   			
+  			<ul class="nav navbar-nav navbar-left">
+  				<% if user_signed_in? %>
+  				<li>
+  					<%= link_to "Add Book", new_book_path %>
+  				</li>
+  				<% end %>
+  			</ul>
   		</div>
   	</div>
 
