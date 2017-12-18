@@ -11,7 +11,7 @@ class BooksController < ApplicationController
 
 	def new
 		@book = current_user.books.build
-		@categories = Category.all.map { |c| [c.name, c.id]  }
+		@categories = Category.all.map { |c| [c.nama, c.id]  }
 		
 	end
 
