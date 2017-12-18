@@ -1,29 +1,23 @@
-<<<<<<< HEAD
-# README
+# <p align="center"> PROJECT PENGEMBANGAN APLIKASI WEB</p>
+<p align="center" ><img width="400" height="400" src= "app/assets/images/logo.png"/></p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h1 align="center">مَكْتَبَتِي</h1>
 
-Things you may want to cover:
+## Tools yang digunakan 
 
-* Ruby version
+* Ubuntu 16.04 LTS
 
-* System dependencies
+* Ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-linux]
 
-* Configuration
+* Ruby on Rails 5.1.4 
 
-* Database creation
+* Bootstrap - sass (3.3.7)
 
-* Database initialization
+* SQL Lite 3 Database
 
-* How to run the test suite
+* Port : 2613
 
-* Services (job queues, cache servers, search engines, etc.)
+## Anggota Kelompok
 
-* Deployment instructions
-
-* ...
-=======
-# bookreview
-Tugas PAW
->>>>>>> 058785c06368b6fb56ac03839ad5ff8df30b4575
+* PIRMAN ABDUROHMAN 1157050127
+* HAFIZH JISMI T 1157050065
