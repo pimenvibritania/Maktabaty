@@ -1,0 +1,25 @@
+<br>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<p class="panel-title"> <b>
+			<%= comment.nama %>
+		</b></p>
+		
+	</div>
+	<div class="panel-body">
+		<p><%= comment.body %></p>
+		<small><%= time_ago_in_words(comment.created_at) %> ago</small>
+
+
+	</div>
+	
+</div>
+
+
+<% if !user_signed_in? %>
+<% elsif current_user.email == comment.nama %>
+<p><%= link_to "Delete", [comment.book, comment], method: :delete, data: { confirm: 'Are you sure? '} %></p>
+<% end %>
+
+

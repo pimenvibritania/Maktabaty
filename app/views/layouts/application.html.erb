@@ -45,8 +45,12 @@
   					<%= link_to "Sign Up", new_user_registration_path %>
   				</li>
   				<% if user_signed_in? %>
+  					
   					<li>
   						<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  					</li>
+  					<li>
+  						<a><%= current_user.email %></a>
   					</li>
   				<% else %>
   					<li>
@@ -79,9 +83,12 @@
   	</div>
 
 <div class="container">
-
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<% if notice != nil %>
+	<div class="alert alert-success" role="alert"><%= notice %> </div>
+	<% end %>
+	<% if alert != nil %>
+	<div class="alert alert-danger" role="alert"><%= alert %></div>
+	<% end %>
    <div align="center" class="arab">
    	<h1>مجموعة من أوراق العلماء</h1>
    	<h4>هذا الموقع يوفر معلومات عن أوراق العلماء السابقين حتى الآن</h4>

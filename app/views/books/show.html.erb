@@ -1,4 +1,6 @@
 <div class="container">
+	<br>
+	<div class="well well-sm glyphicon glyphicon-tags"> Posted by : <%= @user.email %></div>
 	<h2 align="right"><%= @book.title %></h2>
 	<h3 align="right"><%= @book.author %></h3>
 	<h4 align="right">Category : <%= @book.category.nama %></h4>
@@ -10,11 +12,26 @@
 
 	<%= link_to "Back", root_path, class: 'btn btn-primary' %>
 	
+	
+	
 	<% if user_signed_in? %>
+
+	
+
 	<%  if @book.user_id == current_user.id %>
 
 		<%= link_to "Edit", edit_book_path(@book) , class: 'btn btn-primary' %>
 		<%= link_to "Delete", book_path(@book), class: 'btn btn-primary', method: :delete, data: { confirm: "Are you sure?"} %>
 	<% end %>
+	
+	<% end %>
+
+	<h2> <%= @book.comments.count %> Comments </h2>
+	<%= render @book.comments %>
+
+	<% if user_signed_in? %>
+
+	<h3>Add a Comments : </h3>
+	<%= render 'comments/form' %>
 	<% end %>
 </div>
