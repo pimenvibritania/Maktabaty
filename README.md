@@ -15,6 +15,8 @@
 
 * SQL Lite 3 Database
 
+* Gem : 2.6.13
+
 * Port : 2613
 
 ## Anggota Kelompok
