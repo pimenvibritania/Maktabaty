@@ -1,9 +1,10 @@
 <div class="container">
 	<br>
+	
 	<div class="well well-sm glyphicon glyphicon-tags"> 	Posted by : <%= @user.email %></div>
 	<h2 align="right"><%= @book.title %></h2>
 	<h3 align="right"><%= @book.author %></h3>
-	<h4 align="right">Category : <%= @book.category.nama %></h4>
+	<h4 align="right">Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></h4>
 	<p align="right"><%= @book.description %></p>
 	<br>
 	<h4 align="center"><%= @book.summary %></h4>
