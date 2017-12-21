@@ -5,6 +5,8 @@
 		<%= f.select :category_id, @categories %>
 		<br><br>
 		<%= f.file_field :book_img %>
+		<%= f.file_field :document %>
+
 		<%= f.input :title, label: "Book Title" %>
 		<%= f.input :description %>
 		<%= f.input :summary, label: "Arabic Summary" %>
