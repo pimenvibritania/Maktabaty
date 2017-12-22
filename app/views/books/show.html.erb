@@ -1,15 +1,29 @@
+<br>
 <div class="container">
-	<br>
-	
-	<div class="well well-sm glyphicon glyphicon-tags"> 	Posted by : <%= @user.email %></div>
-	<h2 align="right"><%= @book.title %></h2>
-	<h3 align="right"><%= @book.author %></h3>
-	<h4 align="right">Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></h4>
-	<p align="right"><%= @book.description %></p>
-	<br>
-	<h4 align="center"><%= @book.summary %></h4>
-	<br>
-	<h4 align="center"><%= @book.summaryeng %></h4>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="well well-sm glyphicon glyphicon-tags"> 	Posted by : <%= @user.email %></div>
+			<%= image_tag @book.book_img.url(:book_show), class:"book-show" %>
+		</div>
+
+		<div class="col-md-8">
+		<h2 align="center"><%= @book.title %></h2>
+		<h3 align="left"><%= @book.author %></h3>
+		<h4 align="left">Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></h4>
+		<p align="left"><%= @book.description %></p>
+		<h3 align="center">Excerpt of Book</h3>
+		<h4 align="center"><%= @book.summary %></h4>
+		<h3 align="center">About</h3>
+		<h4 align="justify"><%= @book.summaryeng %></h4>
+		</div>
+	</div>
+	<div class="row">
+		
+		<div class="col-md-4">
+			<!-- buat rate -->
+		</div>
+
+	</div>
 	<br>
 	<% if @book.document_file_name != nil %>
 		<iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0"></iframe>
