@@ -90,12 +90,13 @@
 	<% if alert != nil %>
 	<div class="alert alert-danger" role="alert"><%= alert %></div>
 	<% end %>
-   <div align="center" class="arab">
+   <div align="center" class="arab alert alert-success">
    	<h1>مجموعة من أوراق العلماء</h1>
    	<h4>هذا الموقع يوفر معلومات عن أوراق العلماء السابقين حتى الآن</h4>
    </div>
   </div>
       <%= yield %>
+      <a id="back-to-top" href="" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
   </body>
 </html>

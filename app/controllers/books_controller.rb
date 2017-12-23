@@ -17,7 +17,7 @@ class BooksController < ApplicationController
 		@user = User.find(@book.user_id)
 	end
 
-	def new
+	def new 
 		@book = current_user.books.build
 		@categories = Category.all.map { |c| [c.nama, c.id]  }
 		
@@ -26,7 +26,6 @@ class BooksController < ApplicationController
 	def create
 		@book = current_user.books.build(book_params)
 		@book.category_id = params[ :category_id]
-
 		if @book.save
 			redirect_to root_path
 		else
