@@ -15,6 +15,8 @@
 
 * SQL Lite 3 Database
 
+* ImageMagick 6.8.9-9 Q16 x86_64
+
 * Gem 2.6.13
 
 * Port : 2613
