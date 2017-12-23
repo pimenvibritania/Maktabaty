@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <%= favicon_link_tag asset_path('favicon.png'), :rel => 'icon', :type =>  'image/png' %>
     <title>مكتبتي | مجموعة من أوراق العلماء</title>
     <%= csrf_meta_tags %>
 
@@ -93,7 +94,8 @@
    	<h1>مجموعة من أوراق العلماء</h1>
    	<h4>هذا الموقع يوفر معلومات عن أوراق العلماء السابقين حتى الآن</h4>
    </div>
-    <%= yield %>
   </div>
+      <%= yield %>
+
   </body>
 </html>
