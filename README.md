@@ -15,6 +15,8 @@
 
 * SQL Lite 3 Database
 
+* Travis CI
+
 * ImageMagick 6.8.9-9 Q16 x86_64
 
 * Gem 2.6.13
@@ -23,5 +25,5 @@
 
 ## Anggota Kelompok
 
-* PIRMAN ABDUROHMAN 1157050127
+- **[PIRMAN ABDUROHMAN 1157050127](https://www.instagram.com/pimenvibritania/)**
 * HAFIZH JISMI T 1157050065
