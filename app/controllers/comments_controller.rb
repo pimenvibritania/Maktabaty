@@ -6,6 +6,7 @@ class CommentsController < ApplicationController
 		@comment.nama = current_user.email
 
 		if @comment.save
+			flash[:success] = 'Your comment was successfully added!'
 			redirect_to book_path(@book)
 
 		else 
@@ -26,7 +27,7 @@ class CommentsController < ApplicationController
 	def comment_params
 		params.require(:comment).permit(:nama, :body)
 		
-	end
+	end 
 
 
 end
