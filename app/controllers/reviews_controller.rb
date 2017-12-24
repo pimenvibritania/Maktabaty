@@ -10,6 +10,7 @@ class ReviewsController < ApplicationController
 		@review = Review.new(review_params)
 		@review.book_id = @book.id
 		@review.user_id = current_user.id
+		@review.nama = current_user.email
 
 		if @review.save
 			redirect_to book_path(@book)
@@ -32,9 +33,15 @@ class ReviewsController < ApplicationController
 		
 	end
 
+	def destroy
+		@review.destroy
+		redirect_to book_path(@book)
+		
+	end
+
 	private
 	def review_params
-		params.require(:review).permit(:rating, :comment)
+		params.require(:review).permit(:rating, :comment, :nama)
 		
 	end
 	def find_book

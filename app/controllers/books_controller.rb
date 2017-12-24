@@ -8,13 +8,14 @@ class BooksController < ApplicationController
 			@category_id = Category.find_by(nama: params[:category]).id
 			@books = Book.where(:category_id => @category_id).order("created_at DESC")
 		end
-	end
+	end 
 
 	def show
 
 		@book = Book.find(params[:id])
 		@comments = @book.comments.includes(:user)
 		@user = User.find(@book.user_id)
+		
 	end
 
 	def new 

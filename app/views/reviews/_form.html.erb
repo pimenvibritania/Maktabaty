@@ -1,7 +1,7 @@
 
 <%= simple_form_for([@book, @book.reviews.build]) do |f| %>
 	<%= f.input :rating %>
-	<%= f.input :comment %>
+	<%= f.input :comment, :maxlength => 25, :placeholder=>'Max 25 char.. ' %>
 	<%= f.button :submit %>
 
 <% end %>
