@@ -4,6 +4,8 @@
 		<div class="col-md-4">
 			<div class="well well-sm glyphicon glyphicon-tags"> 	Posted by : <%= @user.email %></div>
 			<div class="well well-sm glyphicon glyphicon-tags"> Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></div>
+			<div class="average-review-rating" data-score= <%= @average_review %>><h4><b>Average Rating : </b></h4></div>
+			<span>Based on <%= @book.reviews.count %> reviews</span>
 			<%= image_tag @book.book_img.url(:book_show), class:"book-show" %>
 		</div>
 
@@ -77,4 +79,14 @@
 		path: '/assets/'
 	});
 
+</script>
+<script>
+	$('.average-review-rating').raty({
+
+		readOnly: true,
+		path: '/assets/',
+		score: function(){
+			return $(this).attr('data-score');
+		},
+	});
 </script>
