@@ -6,3 +6,24 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Category.destroy_all
+
+Category.create(
+	nama: "Ushul Fiqh"
+	)
+
+Category.create(
+	nama: "Tafsir al-Qur'an"
+	)
+
+Category.create(
+	nama: "Ulumul Hadits"
+	)
+
+Category.create(
+	nama: "Fiqh"
+	)
+
+Category.create(
+	nama: "Nahwu"
+	)
