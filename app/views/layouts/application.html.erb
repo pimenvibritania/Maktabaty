@@ -35,68 +35,22 @@
   </head>
 
   <body>
-  	<div class="navbar navbar-default">
-  		<div class="container">
-  			<div class="navbar-header">
-  				<b><%= link_to "مَكْتَبَتِي", root_path, class: "navbar-brand" %></b>
-
-  			</div>
-  			<ul class="nav navbar-nav navbar-right">
-  				<li>
-  					<%= link_to "Sign Up", new_user_registration_path %>
-  				</li>
-  				<% if user_signed_in? %>
-  					
-  					<li>
-  						<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-  					</li>
-  					<li>
-  						<a><b><%= current_user.email %></b></a>
-  					</li>
-  				<% else %>
-  					<li>
-  						<%= link_to "Log In",new_user_session_path %>
-  					</li>
-  				<% end %>
-  			</ul>
-  			
-  			<ul class="nav navbar-nav navbar-left">
-  				<li class="dropdown">
-  					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories <span class="caret"></span></a>
-  					<ul class="dropdown-menu" role="menu"> 
-  						<% Category.all.each do |category| %>
-  						<li class="<%= 'active' if params[:category] == category.nama %>">
-  							<%= link_to category.nama, books_path(category: category.nama), class: "link" %>
-  						</li>
-  						<% end %>
-  						
-  					</ul>
-  					
-
-  				</li>
-  				<% if user_signed_in? %>
-  				<li>
-  					<%= link_to "Add Book", new_book_path %>
-  				</li>
-  				<% end %>
-  			</ul>
-  		</div>
-  	</div>
-
-<div class="container">
-	<% if notice != nil %>
-	<div class="alert alert-success" role="alert"><%= notice %> </div>
-	<% end %>
-	<% if alert != nil %>
-	<div class="alert alert-danger" role="alert"><%= alert %></div>
-	<% end %>
-   <div align="center" class="arab alert alert-success">
-   	<h1>مجموعة من أوراق العلماء</h1>
-   	<h4>هذا الموقع يوفر معلومات عن أوراق العلماء السابقين حتى الآن</h4>
-   </div>
-  </div>
+      
+      <%= render 'shared/navbar' %>
       <%= yield %>
-      <a id="back-to-top" href="" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
 
   </body>
 </html>

@@ -3,13 +3,16 @@
 	<div class="row">
 		<div class="col-md-4">
 			<div class="well well-sm glyphicon glyphicon-tags"> 	Posted by : <%= @user.email %></div>
-			<div class="well well-sm glyphicon glyphicon-tags"> Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></div>
-			<div class="average-review-rating" data-score= <%= @average_review %>><h4><b>Average Rating : </b></h4></div>
-			<span>Based on <%= @book.reviews.count %> reviews</span>
-			<%= image_tag @book.book_img.url(:book_show), class:"book-show" %>
+			<div class="well well-sm glyphicon glyphicon-tags nodekor"> Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></div>
+			<div class="book-shadow2" align="center ">
+			<div class="average-review-rating" data-score= <%= @average_review %>><h4><b>Average Rating</b></h4></div>
+			<span>Based on <%= @book.reviews.count %> reviews</span></div>
+			<%= image_tag @book.book_img.url(:book_show), class:"book-show book-shadow3" %><br><br><br>
+			<%= link_to "Back to Index", root_path, class: 'btn btn-primary' %>
+
 		</div>
 
-		<div class="col-md-8">
+		<div class="col-md-8 konten book-shadow2">
 		<h2 align="center"><%= @book.title %></h2>
 		<h3 align="left"><%= @book.author %></h3>
 		<p align="left"><%= @book.description %></p>
@@ -22,10 +25,11 @@
 	
 	<br>
 	<% if @book.document_file_name != nil %>
+		<div class="konten" style="padding: 5px;">
+		<h1 align="center"><b>Read Here</b></h1>
+		</div>
 		<iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0"></iframe>
 	<% end %>
-	<%= link_to "Back", root_path, class: 'btn btn-primary' %>
-	
 	
 	
 	<% if user_signed_in? %>
@@ -47,7 +51,7 @@
 			<div>
 				<%= render @book.reviews %><br>
 				<%  if user_signed_in? %>
-				<%= link_to "Add Review", new_book_review_path(@book) %>
+				<%= link_to "Add Review", new_book_review_path(@book), :class => "btn btn-primary" %>
 				<% end %>
 			</div>
 

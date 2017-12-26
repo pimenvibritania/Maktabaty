@@ -13,31 +13,17 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-//= require bootstrap-sprockets
 //= require jquery3
-//= require jquery_ujs
 //= require bootstrap
 
-$(document).ready(function(){
-     $(window).scroll(function () {
-            if ($(this).scrollTop() > 50) {
-                $('#back-to-top').fadeIn();
-            } else {
-                $('#back-to-top').fadeOut();
-            }
-        });
-        // scroll body to 0px on click
-        $('#back-to-top').click(function () {
-            $('#back-to-top').tooltip('hide');
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        });
-        
-        $('#back-to-top').tooltip('show');
 
+ $("#login-button").click(function(event){
+     event.preventDefault();
+   
+   $('form').fadeOut(500);
+   $('.wrapper').addClass('form-success');
 });
+
 
 /*!
  * jQuery Raty - A Star Rating Plugin
@@ -802,5 +788,6 @@ $(document).ready(function(){
     targetType:   'hint'
   };
 })(jQuery);
+
 
 
