@@ -15,6 +15,7 @@
 //= require_tree .
 //= require jquery3
 //= require bootstrap
+//= require jquery.actual.min
 
 
  $("#login-button").click(function(event){
