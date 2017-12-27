@@ -1,0 +1,13 @@
+current directory: /home/pimen/maktabaty/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+/home/pimen/.rbenv/versions/2.4.2/bin/ruby -r ./siteconf20171227-19540-1t07l53.rb extconf.rb
+creating Makefile
+
+current directory: /home/pimen/maktabaty/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/pimen/maktabaty/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/pimen/maktabaty/vendor/bundle/ruby/2.4.0/gems/json-2.1.0/ext/json
+make "DESTDIR=" install

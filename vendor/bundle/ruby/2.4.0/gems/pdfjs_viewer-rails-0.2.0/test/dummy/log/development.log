@@ -1,0 +1,854 @@
+
+
+Started GET "/" for ::1 at 2016-07-29 14:00:47 +0200
+Processing by SampleController#show as HTML
+  Rendered sample/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1526ms (Views: 1526.2ms)
+
+
+Started GET "/" for ::1 at 2016-07-29 14:00:49 +0200
+Processing by SampleController#show as HTML
+  Rendered sample/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 16ms (Views: 16.3ms)
+
+
+Started GET "/assets/application.self-fb28094035fc8f155b896e47c199355db7c84fc9d6214ed9800f1022ac2ece52.js?body=1" for ::1 at 2016-07-29 14:00:49 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-29 14:00:49 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:00:59 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (451.7ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (458.7ms)
+Completed 200 OK in 463ms (Views: 463.1ms)
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:01:29 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (612.8ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (619.0ms)
+Completed 200 OK in 629ms (Views: 628.7ms)
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-957cf192262034107575110dca9d7144f77d545dc61277c67c504bbcdcc06309.js?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:01:30 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:02:15 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (460.2ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (462.8ms)
+Completed 200 OK in 468ms (Views: 467.8ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-d7442d4def6b99ded3923c0d22d3cee7195a576213aedc846245cdc79e60b987.js?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:02:16 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:02:26 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (19.9ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (22.4ms)
+Completed 200 OK in 25ms (Views: 25.0ms)
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-957cf192262034107575110dca9d7144f77d545dc61277c67c504bbcdcc06309.js?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:02:27 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:02:40 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (473.4ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (476.1ms)
+Completed 200 OK in 480ms (Views: 478.9ms)
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-f246b341340a02f2ec2f33e6afbbd36aa8dfa5307863c0d6d4d213d9082045cc.js?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:02:40 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:03:57 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (1062.3ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (1068.9ms)
+Completed 200 OK in 1078ms (Views: 1078.3ms)
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-f246b341340a02f2ec2f33e6afbbd36aa8dfa5307863c0d6d4d213d9082045cc.js?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:03:58 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:04:08 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (35.5ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (38.0ms)
+Completed 200 OK in 41ms (Views: 40.9ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-957cf192262034107575110dca9d7144f77d545dc61277c67c504bbcdcc06309.js?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:04:08 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:04:39 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (472.1ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (474.9ms)
+Completed 200 OK in 478ms (Views: 477.9ms)
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:04:39 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-5d5677fe248241c35a8e54ec2b1f4027ad031d031dde66cf5b341a36f2993e7e.js?body=1" for ::1 at 2016-07-29 14:04:40 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:04:40 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:04:47 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (27.5ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (30.3ms)
+Completed 200 OK in 40ms (Views: 39.8ms)
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-5d5677fe248241c35a8e54ec2b1f4027ad031d031dde66cf5b341a36f2993e7e.js?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:04:48 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:05:02 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (1018.2ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (1024.4ms)
+Completed 200 OK in 1034ms (Views: 1033.9ms)
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-5d5677fe248241c35a8e54ec2b1f4027ad031d031dde66cf5b341a36f2993e7e.js?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:05:04 +0200
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2016-07-29 14:14:12 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (790.7ms)
+  Rendered /Users/YvesSi/Projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (797.1ms)
+Completed 200 OK in 806ms (Views: 805.8ms)
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2016-07-29 14:14:13 +0200
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2016-07-29 14:14:13 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2016-07-29 14:14:13 +0200
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2016-07-29 14:14:13 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-5d5677fe248241c35a8e54ec2b1f4027ad031d031dde66cf5b341a36f2993e7e.js?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-015cfaffd296f366977935ce37378c4bb0cd2e1a3a2f365e11995774d9d5f90e.js?body=1" for ::1 at 2016-07-29 14:14:14 +0200
+
+
+Started GET "/" for ::1 at 2017-01-12 08:19:33 +0100
+Processing by SampleController#show as HTML
+  Rendered sample/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 1152ms (Views: 1152.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-12 08:19:35 +0100
+Processing by SampleController#show as HTML
+  Rendered sample/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 8.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-01-12 08:19:35 +0100
+
+
+Started GET "/assets/application.self-fb28094035fc8f155b896e47c199355db7c84fc9d6214ed9800f1022ac2ece52.js?body=1" for ::1 at 2017-01-12 08:19:35 +0100
+
+
+Started GET "/pdfjs_viewer/full?file=%2Fsample.pdf" for ::1 at 2017-01-12 08:19:37 +0100
+Processing by PdfjsViewer::ViewerController#full as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (273.9ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/full.html.erb (277.1ms)
+Completed 200 OK in 280ms (Views: 279.9ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-1341060e6512cafb6ce28428edd3885ef4d6e3c614740c84ade08591cd18a462.js?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-0d8ad433201a9d1ea9225b2e0389737da729a1d5401bf6f6ce636a8041c1dc47.js?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-01-12 08:19:37 +0100
+
+
+Started GET "/pdfjs_viewer/full?file=%2Fsample.pdf" for ::1 at 2017-01-12 08:21:34 +0100
+Processing by PdfjsViewer::ViewerController#full as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (299.7ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/full.html.erb (304.9ms)
+Completed 200 OK in 313ms (Views: 313.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-12 08:34:24 +0100
+Processing by SampleController#show as HTML
+  Rendered sample/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 22ms (Views: 21.6ms)
+
+
+Started GET "/pdfjs_viewer/reduced?file=%2Fsample.pdf" for ::1 at 2017-01-12 08:34:26 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (291.7ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (293.4ms)
+Completed 200 OK in 295ms (Views: 295.1ms)
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-70e29838ab5aca581a3cbb43e0d68608773ce227ffc482b3a693a8adf41a9f9a.js?body=1" for ::1 at 2017-01-12 08:34:26 +0100
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 08:41:22 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (883.8ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (891.4ms)
+Completed 200 OK in 898ms (Views: 898.3ms)
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-5ca21f6294ea98093effaa8092567b9277490bbab15e92be5e2653bd5ab4c752.js?body=1" for ::1 at 2017-01-12 08:41:23 +0100
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 08:54:53 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (403.8ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (405.2ms)
+Completed 200 OK in 407ms (Views: 406.7ms)
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-b1df699f343e718c577420e1401d5d818d7be5adb41a9b6a694aa126fceb187d.js?body=1" for ::1 at 2017-01-12 08:54:54 +0100
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 08:55:01 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (23.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (24.8ms)
+Completed 200 OK in 26ms (Views: 26.3ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-42f599b84ddba192a4a89e6875751fcc5f6da3b47102b7666f59501266ea4fda.css?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-1844c42947aaf06f24cb0f79ecc3377f925c88a233dafec17f9f462bc2bc0028.js?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.combined.self-3987aa56db4b68a7d986433abc7126d4f5a0bc451928e72b75fb777ead038edc.js?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-2afe51de752f8bc53d7fcdbae4c9630835cb46e4aed8ec99baac329d14be41d8.js?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-b1df699f343e718c577420e1401d5d818d7be5adb41a9b6a694aa126fceb187d.js?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/configurations.self-5ca21f6294ea98093effaa8092567b9277490bbab15e92be5e2653bd5ab4c752.js?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-01-12 08:55:01 +0100
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 08:55:07 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (604.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (609.1ms)
+Completed 200 OK in 617ms (Views: 617.0ms)
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 08:55:08 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (10.9ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (12.4ms)
+Completed 200 OK in 14ms (Views: 14.0ms)
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 08:56:05 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (404.6ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (406.4ms)
+Completed 200 OK in 408ms (Views: 408.4ms)
+
+
+Started GET "/assets/pdfjs_viewer/viewer.self-61a53c01858c7cc180c61604ec5494d51617ba57bd445d4c98b2a541e82d370c.js?body=1" for ::1 at 2017-01-12 08:56:06 +0100
+
+
+Started GET "/pdfjs_viewer/reduced?file=http://www.pdf995.com/samples/pdf.pdf" for ::1 at 2017-01-12 09:25:35 +0100
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"http://www.pdf995.com/samples/pdf.pdf"}
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (11.8ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (13.3ms)
+Completed 200 OK in 15ms (Views: 15.0ms)
+Started GET "/" for ::1 at 2017-09-11 11:13:49 +0200
+Processing by SampleController#show as HTML
+  Rendering sample/show.html.erb within layouts/application
+  Rendered sample/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 527ms (Views: 525.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-09-11 11:13:49 +0200
+Started GET "/assets/application.self-fb28094035fc8f155b896e47c199355db7c84fc9d6214ed9800f1022ac2ece52.js?body=1" for ::1 at 2017-09-11 11:13:50 +0200
+Started GET "/pdfjs_viewer/reduced?file=%2Fsample.pdf" for ::1 at 2017-09-11 11:13:51 +0200
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendering /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (99.5ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.5ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (105.2ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (107.7ms)
+Completed 200 OK in 116ms (Views: 110.2ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-f322cff654687e6d546a3ccc4f98044aee789e0e0ea9257f5fa830bbae2ef378.css?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-2cc3cabd5857e95ff8660fd390b03bf1ed74d29808e0d4ff542d62394426729b.js?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.self-8868d3f913a3bfcd10482b828dbe4325f0db5b552db16283741a828235e698b7.js?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-f3d9883f523019cfd88f7b1254e65b071a8cc73d271cd50e4690ad9dd3fa6774.js?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/viewer_configurations.self-e82fbd80edfd332adf179b438a0a7ddaf56b9024d556be0e1d52f5c69fb66b5d.js?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/viewer.self-b3336f620e2456a102a348a3726267d95a7fbeaaf5483a867d26b68286f8c32b.js?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-09-11 11:13:52 +0200
+Started GET "/helper" for ::1 at 2017-09-11 11:14:10 +0200
+Processing by SampleController#helper as HTML
+  Rendering sample/helper.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (12.0ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (16.3ms)
+  Rendered sample/helper.html.erb (18.4ms)
+Completed 200 OK in 20ms (Views: 19.9ms)
+
+
+Started GET "/pdfjs_viewer/reduced?file=%2Fsample.pdf" for ::1 at 2017-09-11 11:15:17 +0200
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendering /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (11.2ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.4ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (16.1ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (18.3ms)
+Completed 200 OK in 23ms (Views: 20.6ms)
+
+
+Started GET "/" for ::1 at 2017-09-11 11:42:22 +0200
+Processing by SampleController#show as HTML
+  Rendering sample/show.html.erb within layouts/application
+  Rendered sample/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 308ms (Views: 306.7ms)
+
+
+Started GET "/pdfjs_viewer/minimal?file=%2Fsample.pdf" for ::1 at 2017-09-11 11:42:23 +0200
+Processing by PdfjsViewer::ViewerController#minimal as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendering /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb
+  Rendered pdfjs_viewer/viewer/_viewer.html.erb (0.2ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/minimal.html.erb (2.2ms)
+Completed 200 OK in 9ms (Views: 5.3ms)
+
+
+Started GET "/" for ::1 at 2017-09-25 12:15:54 +0200
+Processing by SampleController#show as HTML
+  Rendering sample/show.html.erb within layouts/application
+  Rendered sample/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 290ms (Views: 289.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-09-25 12:15:55 +0200
+Started GET "/assets/application.self-fb28094035fc8f155b896e47c199355db7c84fc9d6214ed9800f1022ac2ece52.js?body=1" for ::1 at 2017-09-25 12:15:55 +0200
+Started GET "/pdfjs_viewer/reduced?file=%2Fsample.pdf" for ::1 at 2017-09-25 12:16:02 +0200
+Processing by PdfjsViewer::ViewerController#reduced as HTML
+  Parameters: {"file"=>"/sample.pdf"}
+  Rendering /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (33.2ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_extra_head.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.4ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (39.5ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/reduced.html.erb (41.2ms)
+Completed 200 OK in 45ms (Views: 42.9ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-f322cff654687e6d546a3ccc4f98044aee789e0e0ea9257f5fa830bbae2ef378.css?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-f3d9883f523019cfd88f7b1254e65b071a8cc73d271cd50e4690ad9dd3fa6774.js?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-2cc3cabd5857e95ff8660fd390b03bf1ed74d29808e0d4ff542d62394426729b.js?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.self-8868d3f913a3bfcd10482b828dbe4325f0db5b552db16283741a828235e698b7.js?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/viewer_configurations.self-e82fbd80edfd332adf179b438a0a7ddaf56b9024d556be0e1d52f5c69fb66b5d.js?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/viewer.self-b3336f620e2456a102a348a3726267d95a7fbeaaf5483a867d26b68286f8c32b.js?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-09-25 12:16:02 +0200
+Started GET "/" for ::1 at 2017-09-25 13:28:14 +0200
+Processing by SampleController#show as HTML
+  Rendering sample/show.html.erb within layouts/application
+  Rendered sample/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 245ms (Views: 243.8ms)
+
+
+Started GET "/helper" for ::1 at 2017-09-25 13:28:22 +0200
+Processing by SampleController#helper as HTML
+  Rendering sample/helper.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (19.9ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_extra_head.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (27.2ms)
+  Rendered sample/helper.html.erb (28.9ms)
+Completed 200 OK in 30ms (Views: 30.0ms)
+
+
+Started GET "/helper" for ::1 at 2017-09-25 13:28:33 +0200
+Processing by SampleController#helper as HTML
+  Rendering sample/helper.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (10.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_extra_head.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (16.3ms)
+  Rendered sample/helper.html.erb (17.9ms)
+Completed 200 OK in 19ms (Views: 19.1ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-f322cff654687e6d546a3ccc4f98044aee789e0e0ea9257f5fa830bbae2ef378.css?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-2cc3cabd5857e95ff8660fd390b03bf1ed74d29808e0d4ff542d62394426729b.js?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-f3d9883f523019cfd88f7b1254e65b071a8cc73d271cd50e4690ad9dd3fa6774.js?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/viewer_configurations.self-e82fbd80edfd332adf179b438a0a7ddaf56b9024d556be0e1d52f5c69fb66b5d.js?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.self-8868d3f913a3bfcd10482b828dbe4325f0db5b552db16283741a828235e698b7.js?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/viewer.self-b3336f620e2456a102a348a3726267d95a7fbeaaf5483a867d26b68286f8c32b.js?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-09-25 13:28:33 +0200
+Started GET "/helper" for ::1 at 2017-09-25 13:28:54 +0200
+Processing by SampleController#helper as HTML
+  Rendering sample/helper.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (13.6ms)
+  Rendered pdfjs_viewer/viewer/_extra_head.html.erb (0.3ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.2ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (19.5ms)
+  Rendered sample/helper.html.erb (21.3ms)
+Completed 200 OK in 23ms (Views: 22.4ms)
+
+
+Started GET "/assets/pdfjs_viewer/pdfjs/viewer.self-f322cff654687e6d546a3ccc4f98044aee789e0e0ea9257f5fa830bbae2ef378.css?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/reduced.self-d5a4ca78b7f040476d48d4c3d886e4d871c7240459751ec47de2a07375311641.css?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/minimal.self-7da4c967089f494deec36a4fa5022ab9d17eb0208edc97fab3e7e49b4336bec6.css?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/compatibility.self-2cc3cabd5857e95ff8660fd390b03bf1ed74d29808e0d4ff542d62394426729b.js?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/full.self-cd6d524c40772bb6a4b05f8080809bba86491304e690d928dd7fdcef08d34f4f.css?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/application.self-39e937c38e18a6e30a0df8f358daffb7d0f9ef8e553222083a4197eb152141a5.css?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/viewer_configurations.self-e82fbd80edfd332adf179b438a0a7ddaf56b9024d556be0e1d52f5c69fb66b5d.js?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/l10n.self-f3d9883f523019cfd88f7b1254e65b071a8cc73d271cd50e4690ad9dd3fa6774.js?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/pdfjs/pdf.self-8868d3f913a3bfcd10482b828dbe4325f0db5b552db16283741a828235e698b7.js?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/viewer.self-b3336f620e2456a102a348a3726267d95a7fbeaaf5483a867d26b68286f8c32b.js?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/assets/pdfjs_viewer/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for ::1 at 2017-09-25 13:28:54 +0200
+Started GET "/admin" for ::1 at 2017-09-25 13:31:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/siegy/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/siegy/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/siegy/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/admin" for ::1 at 2017-09-25 13:31:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+rack (2.0.3) lib/rack/handler/webrick.rb:86:in `service'
+/Users/siegy/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/siegy/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/siegy/.rbenv/versions/2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+Started GET "/helper" for ::1 at 2017-09-25 13:31:05 +0200
+Processing by SampleController#helper as HTML
+  Rendering sample/helper.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (280.1ms)
+  Rendered pdfjs_viewer/viewer/_extra_head.html.erb (0.4ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.4ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (286.9ms)
+  Rendered sample/helper.html.erb (288.8ms)
+Completed 200 OK in 290ms (Views: 290.3ms)
+
+
+Started GET "/helper" for ::1 at 2017-09-25 13:31:05 +0200
+Processing by SampleController#helper as HTML
+  Rendering sample/helper.html.erb
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_head.html.erb (13.1ms)
+  Rendered pdfjs_viewer/viewer/_extra_head.html.erb (0.5ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_printcontainer.html.erb (0.4ms)
+  Rendered /Users/siegy/projects/pdfjs_viewer-rails/app/views/pdfjs_viewer/viewer/_viewer.html.erb (21.4ms)
+  Rendered sample/helper.html.erb (23.5ms)
+Completed 200 OK in 26ms (Views: 25.4ms)
+
+
