@@ -1,3 +1,43 @@
+<style>
+.containera {
+  position: relative;
+
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:rgba(132, 0, 44, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.containera:hover .overlay {
+  bottom: 20px;
+  height: 40%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+
   
 	<b><h1 class="book-shadow4" align="center"><%= params[:category] %></h1></b>
 	<div class="container">
@@ -8,13 +48,14 @@
 	<% else %>
 		<div class="row">
 		 <% @books.each do |book| %>
-		 <div class="col-md-3 book-shadow2" align="center">
-		 	<div class="book-shadow konten2">
-		 	<h3><%= book.title %></h3>
-		 	</div>
+		 <div class="col-md-3 book-shadow2 containera" align="center">
 		 	<a href="/books/<%=book.id %>">
-		 		<%= image_tag book.book_img.url(:book_index), class: 'book' %>
+		 		<%= image_tag book.book_img.url(:book_index), class: 'book image' %>
 		 	</a>
+		 	<div class="overlay">
+    			<div class="text"><%= book.title %></div>
+  			</div>
+		 	
 		 </div>
 		 <% end %>
 		</div>
