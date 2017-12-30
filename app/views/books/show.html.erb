@@ -1,92 +1,93 @@
 <style>
-	
-	#side
-	{
+ 
+ #side
+ {
 
-		border: 2px solid rgba(0,0,0,0.4);
-		padding: 15px;
-		margin: 10px 0;
-	}
+  border: 2px solid rgba(0,0,0,0.4);
+  padding: 15px;
+  margin: 10px 0;
+ }
 </style>
 
 <br>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<div class="well well-sm glyphicon glyphicon-tags"> 	Posted by : <%= @user.email %></div>
-			<div class="well well-sm glyphicon glyphicon-tags nodekor"> Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></div>
-			<div class="book-shadow2" align="center ">
-			<div class="average-review-rating" data-score= <%= @average_review %>><h4><b>Average Rating</b></h4></div>
-			<span>Based on <%= @book.reviews.count %> reviews</span></div>
-			<%= image_tag @book.book_img.url(:book_show), class:"book-show book-shadow3", id: "myImg" %><br><br><br>
-			<%= link_to "Back to Index", root_path, class: 'btn btn-primary' %>
+ <div class="row">
+  <div class="col-md-4">
+   <div class="well well-sm glyphicon glyphicon-tags">  Posted by : <%= @user.email %></div>
+   <div class="well well-sm glyphicon glyphicon-tags nodekor"> Category : <%= link_to @book.category.nama, books_path(category: @book.category.nama) %></div>
+   <div class="book-shadow2" align="center ">
+   <div class="average-review-rating" data-score= <%= @average_review %>><h4><b>Average Rating</b></h4></div>
+   <span>Based on <%= @book.reviews.count %> reviews</span></div>
+   <%= image_tag @book.book_img.url(:book_show), class:"book-show book-shadow3", id: "myImg" %>
+   <h3 class="book-shadow2" align="center">Price : <b><%= @book.price %></b></h3>
+   <br><br><br>
+   <%= link_to "Back to Index", root_path, class: 'btn btn-primary' %>
+   <% if user_signed_in? %> 
 
-		</div>
-		<div class="col-md-8 konten book-shadow2">
-			<div id="side">
-				<h2 align="center"><%= @book.title %></h2>
-				<h4 align="center"><%= @book.author %></h4>
-				<br>
-				<p align="center"><%= @book.description %></p>
-				<h3 align="center">Excerpt of Book</h3>
-				<h4 align="center"><%= @book.summary %></h4>
-				<h3 align="center">About</h3>
-				<h4 style="text-align: justify; text-indent: 50px; letter-spacing: 3px;"><%= @book.summaryeng %></h4>
-			</div>
-		</div>
-	</div>
-	
-	<br>
-	<% if @book.document_file_name != nil %>
-	<div class="block_title">
-		<button type="button" class="btn btn-custom2" data-toggle="collapse" data-target="#demo" style="width: 30%;">Click Here to  Read</button>
-			<div id="demo" class="collapse">
-				<iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0" class="book-shadow3"></iframe>
-			</div>
-	</div>
-	
-	<% end %>
-	
-	
-	<% if user_signed_in? %>
+    <%  if @book.user_id == current_user.id %>
 
-	
+     <%= link_to "Edit", edit_book_path(@book) , class: 'btn btn-primary' %>
+     <%= link_to "Delete", book_path(@book), class: 'btn btn-primary', method: :delete, data: { confirm: "Are you sure?"} %>
+    <% end %>
+   <% end %>
 
-	<%  if @book.user_id == current_user.id %>
+  </div>
+  <div class="col-md-8 konten book-shadow2">
+   <div id="side">
+   	<h3 align="center">﷽</h3><br>
+    <h2 align="center"><%= @book.title %></h2>
+    <h4 align="center"><%= @book.author %></h4>
+    <br>
+    <p align="center">Tahqiq : <%= @book.tahqiq %> | Publisher : <%= @book.publisher %> | Volume : <%= @book.volume %>
+    	<br><%= @book.description %>
+    </p>
+    <h3 align="center">Excerpt of Book</h3>
+    <h4 align="center"><%= @book.summary %></h4>
+    <h3 align="center">About</h3>
+    <h4 style="text-align: justify; text-indent: 50px; letter-spacing: 3px;"><%= @book.summaryeng %></h4>
+   </div>
+  </div>
+ </div>
+ 
+ <br>
+ <% if @book.document_file_name != nil %>
+ <div class="block_title">
+  <button type="button" class="btn btn-custom2" data-toggle="collapse" data-target="#demo" style="width: 30%;">Click Here to  Read</button>
+   <div id="demo" class="collapse">
+    <iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0" class="book-shadow3"></iframe>
+   </div>
+ </div>
+ 
+ <% end %>
+ 
+ <div class="row">
+  
+  <div class="col-md-4">
+   <!-- buat rate -->
+   <h3 align="center">Review</h3>
+   <div>
+    <%= render @book.reviews %><br>
+    <%  if user_signed_in? %>
+    <%= link_to "Add Review", new_book_review_path(@book), :class => "btn btn-primary" %>
+    <% end %>
+   </div>
 
-		<%= link_to "Edit", edit_book_path(@book) , class: 'btn btn-primary' %>
-		<%= link_to "Delete", book_path(@book), class: 'btn btn-primary', method: :delete, data: { confirm: "Are you sure?"} %>
-	<% end %>
-	
-	<% end %>
-	<div class="row">
-		
-		<div class="col-md-4">
-			<!-- buat rate -->
-			<h3 align="center">Review</h3>
-			<div>
-				<%= render @book.reviews %><br>
-				<%  if user_signed_in? %>
-				<%= link_to "Add Review", new_book_review_path(@book), :class => "btn btn-primary" %>
-				<% end %>
-			</div>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="col-md-7">
+   <h2 align="center">Discussion</h2>
+   <h4> <%= @book.comments.count %> Comments </h4>
+   <%= render @book.comments %>
 
-		</div>
-		<div class="col-md-1"></div>
-		<div class="col-md-7">
-			<h2 align="center">Discussion</h2>
-			<h4> <%= @book.comments.count %> Comments </h4>
-			<%= render @book.comments %>
+   <% if user_signed_in? %>
 
-			<% if user_signed_in? %>
-
-			<h3>Add a Comments : </h3>
-			<%= render 'comments/form' %>
-			<% end %>
-		</div>
-	</div>
-	
+   <h3>Add a Comments : </h3>
+   <%= render 'comments/form' %>
+   <% end %>
+  </div>
+ </div>
+ 
 </div>
 
 <!-- The Modal -->
@@ -98,26 +99,26 @@
 
 
 <script>
-	
-	$('.review-rating').raty({
+ 
+ $('.review-rating').raty({
 
-		readOnly: true,
-		score: function(){
-			return $(this).attr('data-score');
-		},
-		path: '/assets/'
-	});
+  readOnly: true,
+  score: function(){
+   return $(this).attr('data-score');
+  },
+  path: '/assets/'
+ });
 
 </script>
 <script>
-	$('.average-review-rating').raty({
+ $('.average-review-rating').raty({
 
-		readOnly: true,
-		path: '/assets/',
-		score: function(){
-			return $(this).attr('data-score');
-		},
-	});
+  readOnly: true,
+  path: '/assets/',
+  score: function(){
+   return $(this).attr('data-score');
+  },
+ });
 </script>
 
 <script>
