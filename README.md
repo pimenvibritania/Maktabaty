@@ -37,6 +37,8 @@
 
 * modernizr_rails
 
+* seed_dump
+
 
 ## Members
 
