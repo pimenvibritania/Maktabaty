@@ -1,9 +1,9 @@
-# <p align="center"> PROJECT PENGEMBANGAN APLIKASI WEB</p>
+# <p align="center"> WEB APPLICATION DEVELOPMENT PROJECT</p>
 <p align="center" ><img width="400" height="400" src= "app/assets/images/logo.png"/></p>
 
 <h1 align="center">مكتبتي | مجموعة من أوراق العلماء</h1>
 
-## Tools yang digunakan 
+## Tools Used
 
 * Ubuntu 16.04 LTS
 
@@ -23,7 +23,22 @@
 
 * Port : 2613
 
-## Anggota Kelompok
+## Additional Gems
+
+* paperclip
+
+* bootstrap sass
+
+* devise
+
+* simple_form
+
+* jquery-rails
+
+* modernizr_rails
+
+
+## Members
 
 - **[PIRMAN ABDUROHMAN 1157050127](https://www.instagram.com/pimenvibritania/)**
 * HAFIZH JISMI T 1157050065
