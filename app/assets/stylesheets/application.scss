@@ -545,3 +545,31 @@ p.alert, p.notice {
 }
 
 
+/* Block-Title mine */
+
+.block_title2 {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.block_title2:before,.block_title2:after {
+    content: "";
+    background: #ccc;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    width: 42%;
+    vertical-align: middle;
+}
+
+.block_title2:before {
+    right: 0.5em;
+    margin-left: -42%;
+}
+.block_title2:after {
+    left: 0.5em;
+    margin-right: -42%;
+}

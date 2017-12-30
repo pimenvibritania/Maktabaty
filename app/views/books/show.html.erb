@@ -51,15 +51,27 @@
  </div>
  
  <br>
- <% if @book.document_file_name != nil %>
- <div class="block_title">
-  <button type="button" class="btn btn-custom2" data-toggle="collapse" data-target="#demo" style="width: 30%;">Click Here to  Read</button>
-   <div id="demo" class="collapse">
-    <iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0" class="book-shadow3"></iframe>
-   </div>
- </div>
- 
- <% end %>
+<% if user_signed_in? %> 
+	 <% if @book.document_file_name != nil %>
+	 <div class="block_title">
+	  <button type="button" class="btn btn-custom2" data-toggle="collapse" data-target="#demo" style="width: 30%;">Click Here to  Read</button>
+	   <div id="demo" class="collapse">
+	    <iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0" class="book-shadow3"></iframe>
+	   </div>
+	 </div>
+	 <% else %>
+	 <div class="block_title">
+	 	<h4 style="color: white;">No PDF here....</h4>
+	 </div>
+	 
+	 <% end %>
+<% else %>
+	<div align="center">
+		<h2 style="color: white;" class="block_title2">Login now, to read PDF file!</h2>
+		<%= link_to "LOGIN", new_user_session_path, class: 'btn btn-lg btn-custom'  %>
+		
+	</div>
+<% end %>
  
  <div class="row">
   
