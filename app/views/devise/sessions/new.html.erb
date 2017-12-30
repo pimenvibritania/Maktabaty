@@ -1,12 +1,12 @@
 <div class="col-md-6 col-md-offset-3">
 	<div class="signup-form">
 
-		<h2>WELCOME</h2>
+		<h2 align="center">WELCOME</h2>
 		<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 		<form class="form">
 		    <%= f.input :email, required: false, autofocus: true %>
 		    <%= f.input :password, required: false %>
-		    <%= f.button :submit, "Log in", id: "login-button" %>
+		    <%= f.button :submit, "Log in", id: "login-button", class: "btn-custom2" %>
 		<% end %>
 		</form>
 			<%= render "devise/shared/links" %>

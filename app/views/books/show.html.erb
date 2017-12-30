@@ -25,10 +25,13 @@
 	
 	<br>
 	<% if @book.document_file_name != nil %>
-		<div class="konten" style="padding: 5px;">
-		<h1 align="center"><b>Read Here</b></h1>
-		</div>
-		<iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0" class="book-shadow3"></iframe>
+	<div class="block_title">
+		<button type="button" class="btn btn-custom2" data-toggle="collapse" data-target="#demo" style="width: 30%;">Click Here to  Read</button>
+			<div id="demo" class="collapse">
+				<iframe src="<%= @book.document %>" width="100%" height="650px" frameBorder="0" class="book-shadow3"></iframe>
+			</div>
+	</div>
+	
 	<% end %>
 	
 	

@@ -1,18 +1,27 @@
-<div class="container">
 	<h1>Edit Book</h1>
-
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+	<div class="signup-form">
 	<%= simple_form_for @book, :html => { :multipart => true } do |f| %>
 		<%= f.select :category_id, @categories %>
 		<br><br>
-		<p>Upload image here : <%= f.file_field :book_img %></p>
-		<p>Upload PDF here : <%= f.file_field :document %></p>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Upload image here : <%= f.file_field :book_img %></p>
+			</div>
+			<div class="col-md-6">
+				<p>Upload PDF here : <%= f.file_field :document %></p>
+			</div>
+		</div>
 		<%= f.input :title, label: "Book Title" %>
-		<%= f.input :description %>
-		<%= f.input :summary, label: "Arabic Summary" %>
-		<%= f.input :summaryeng, label: "Summary" %>
 		<%= f.input :author %>
-		<%= f.button :submit %>
+		<%= f.input :description %>
+		<%= f.input :summary, label: "Summary" %>
+		<%= f.input :summaryeng, label: "Review" %>
+		<%= f.button :submit, class: "btn-custom" %>
+
 
 	<% end %>
 
+</div>
 </div>
