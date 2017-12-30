@@ -1,5 +1,5 @@
 # <p align="center"> WEB APPLICATION DEVELOPMENT PROJECT</p>
-<p align="center" ><img width="400" height="400" src= "app/assets/images/logo.png"/></p>
+<p align="center" ><img width="400" height="400" src= "app/assets/images/favicon.png"/></p>
 
 <h1 align="center">مكتبتي | مجموعة من أوراق العلماء</h1>
 
