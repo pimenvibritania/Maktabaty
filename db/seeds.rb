@@ -1,29 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-Category.destroy_all
-
-Category.create(
-	nama: "Ushul Fiqh"
-	)
-
-Category.create(
-	nama: "Tafsir al-Qur'an"
-	)
-
-Category.create(
-	nama: "Ulumul Hadits"
-	)
-
-Category.create(
-	nama: "Fiqh"
-	)
-
-Category.create(
-	nama: "Nahwu"
-	)
+User.create!([
+  {email: "pimen@gmail.com", encrypted_password: "$2a$11$OoEbQIpaY6b8.L9xkVJWvOWjhF1mQ88eIHZcLY3cs6vOkL2532elm", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 3, current_sign_in_at: "2017-12-29 21:11:18", last_sign_in_at: "2017-12-29 20:50:09", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"},
+  {email: "pimen@cc.com", encrypted_password: "$2a$11$b0rQ.3rCEU1XZjw.MySJre/96.CQf0b08NJ6wJ4tm942jdNbLNgSq", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 5, current_sign_in_at: "2017-12-30 17:49:37", last_sign_in_at: "2017-12-30 10:34:47", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
+])
+Book.create!([
+  {title: "شرح ابن عقيل على ألفية ابن مالك ", description: "Bahasa : Arab | Script : Arab ", author: " ابن عقيل، عبد الله بن عبد الرحمن العقيلي الهمداني المصري (المتوفى: 769هـ)", summary: "وهذه الشروح مختلفة، ففيها المختصر، وفيها المطول، فيها المتعقب صاحبه للناظم يتحامل عليه، ويتلمس له المزالق، وفيها المتحيز له، والمصحح لكل ما يجئ به، وفيها الذي اتخذ صاحبه طريقا وسطا بين الإيجاز والإطناب، والتحامل والتحيز.", summaryeng: "Nazhom al-Kafiyah al-Syafiyah yang terdiri dari 2757 bait. Kitab ini menyajikan semua informasi tentang Ilmu Nahwu dan Shorof yang diikuti dengan komentar (syarah). Kemudian kitab ini diringkas menjadi seribu bait, yang kini terkenal dengan nama Alfiyah Ibnu Malik. Kitab ini bisa disebut Al-Khulashah (ringkasan) karena isinya mengutip inti uraian dari Al-Kafiyah, dan bisa juga disebut Alfiyah (ribuan) karena bait syairnya terdiri dari seribu baris. Kitab ini terdiri dari delapan puluh (80) bab, dan setiap bab diisi oleh beberapa bait. Bab yang terpendek diisi oleh dua bait seperti Bab al-Ikhtishash dan bab yang terpanjang adalah Jama’ Taktsir karena diisi empat puluh dua bait. Dalam muqaddimahnya, kitab puisi yang memakai Bahar Rojaz ini disusun dengan maksud (1) menghimpun semua permasalahan nahwiyah dan shorof yang dianggap penting. (2) menerangkan hal-hal yang rumit dengan bahasa yang singkat , tetapi sanggup menghimpun kaidah yang berbeda-beda, atau dengan sebuah contoh yang bisa menggambarkan satu persyaratan yang diperlukan oleh kaidah itu.(3) membangkitkan perasaan senang bagi orang yang ingin mempelajari isinya. Semua itu terbukti, sehingga kitab ini lebih baik dari pada Kitab Alfiyah karya Ibn Mu’thi. Meskipun begitu, penulisnya tetap menghargai Ibnu Mu’thi karena tokoh ini membuka kreativitas dan lebih senior. Dalam Islam, semua junior harus menghargai seniornya, paling tidak karena dia lebih sepuh, dan menampilkan kreativitas. Kitab Khulashoh yang telah diterjemahkan ke dalam banyak bahasa di dunia ini, memiliki posisi yang penting dalam perkembangan Ilmu Nahwu.", user_id: 2, category_id: 5, book_img_file_name: "alf.jpg", book_img_content_type: "image/jpeg", book_img_file_size: 1661221, book_img_updated_at: "2017-12-30 07:08:41", document_file_name: "alfi.pdf", document_content_type: "application/pdf", document_file_size: 8817127, document_updated_at: "2017-12-30 07:08:43", tahqiq: "Syeikh Bahauddin Bin Abdullah Bin Aqil Al-'Aqili", publisher: "Dar El-Fikr, Lebanon", volume: "Hard Cover , HVS, 642 hlm, 174 x 245 mm, 850 gr", price: "IDR 250.000"},
+  {title: "الخلاصة المسمى المختصر ونقاوة المعتصر", description: "-", author: "Hujjatul Islam wa Barkatul Anaam Imam Abi Hamid Muhammed bin Muhammed bin Muhammed al Ghazali Died 505 Hijri", summary: "بداية العصبة به، كل, هذه تعديل الأرواح الإثنان قد. قام لفشل التقليدي ان. هذه شعار أعمال جديداً أن, ما كما خلاف التغييرات. به، أي بخطوط المضي الأوربيين, ٣٠ لان بحشد الثقيل استبدال, جمعت وحتّى لمّ و. لمّ و يعادل الربيع، وبريطانيا. حالية طوكيو حيث ثم, ببعض وزارة الجديدة، مكن كل.", summaryeng: " Abu Hamid Muhammad, famous in the world of learning as al-Ghazzal was born in 450 AH (1058 A.D). in Persia . He graduated from the Nizamia Madressa at Nishapur, with distinction.a very famous educational institution in Nishapur. Later he was appointed as a teacher at the Nizamia College in Baghdad, where he proved very successful in imparting knowledge to the scholars under his care. This valuable gift of sustaining interest of his pupils and passing on his knowledge to them made him so famous that students from all parts of the country flocked to study under him.", user_id: 2, category_id: 1, book_img_file_name: "khulashoh.jpg", book_img_content_type: "image/jpeg", book_img_file_size: 58377, book_img_updated_at: "2017-12-30 17:51:50", document_file_name: "خلاصة-المختصر-للغزالي.pdf", document_content_type: "application/pdf", document_file_size: 14279553, document_updated_at: "2017-12-30 17:51:51", tahqiq: "Amjad Rashid Muhammed Ali", publisher: "Dar Al-Minhaj , Saudi Arabia", volume: "Hardback 766 pages", price: "£ 19.50"}
+])
+Category.create!([
+  {nama: "Ushul Fiqh"},
+  {nama: "Tafsir al-Qur'an"},
+  {nama: "Ulumul Hadits"},
+  {nama: "Fiqh"},
+  {nama: "Nahwu"}
+])
