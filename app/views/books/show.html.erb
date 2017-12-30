@@ -1,4 +1,16 @@
+<style>
+	
+	#side
+	{
+
+		border: 2px solid rgba(0,0,0,0.4);
+		padding: 15px;
+		margin: 10px 0;
+	}
+</style>
+
 <br>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-4">
@@ -11,15 +23,17 @@
 			<%= link_to "Back to Index", root_path, class: 'btn btn-primary' %>
 
 		</div>
-
 		<div class="col-md-8 konten book-shadow2">
-		<h2 align="center"><%= @book.title %></h2>
-		<h3 align="left"><%= @book.author %></h3>
-		<p align="left"><%= @book.description %></p>
-		<h3 align="center">Excerpt of Book</h3>
-		<h4 align="center"><%= @book.summary %></h4>
-		<h3 align="center">About</h3>
-		<h4 style="text-align: justify; text-indent: 50px; letter-spacing: 3px;"><%= @book.summaryeng %></h4>
+			<div id="side">
+				<h2 align="center"><%= @book.title %></h2>
+				<h4 align="center"><%= @book.author %></h4>
+				<br>
+				<p align="center"><%= @book.description %></p>
+				<h3 align="center">Excerpt of Book</h3>
+				<h4 align="center"><%= @book.summary %></h4>
+				<h3 align="center">About</h3>
+				<h4 style="text-align: justify; text-indent: 50px; letter-spacing: 3px;"><%= @book.summaryeng %></h4>
+			</div>
 		</div>
 	</div>
 	
