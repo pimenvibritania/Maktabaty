@@ -1,8 +1,8 @@
 <div class="col-md-2"></div>
 <div class="col-md-8">
-	<div class="signup-form">
+	<div class="signup-form" style="color: white; margin-top: -30px;">
 	<%= simple_form_for @book, :html => { :multipart => true } do |f| %>
-		<%= select_tag(:category_id, options_for_select(@categories ), :prompt => "Select book category") %>
+		<%= select_tag(:category_id, options_for_select(@categories ), :prompt => "Select book category", style: 'color: black') %>
 		<br><br>
 		<div class="row">
 			<div class="col-md-6">
@@ -21,8 +21,9 @@
 		<%= f.input :description, label:"Other" %>
 		<%= f.input :summary, label: "Summary" %>
 		<%= f.input :summaryeng, label: "About this Book" %>
-		<%= f.button :submit, class: "btn-custom" %>
-
+		<div align="center">
+			<%= f.button :submit, class: "btn-custom2" %>
+		</div>
 
 	<% end %>
 </div>

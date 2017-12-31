@@ -1,91 +1,63 @@
-<!-- Contact Area -->
-<style>
+<div class="row" style="width: 101%;">
+    <div id="contact-area">
     
-    .bored
-    {
-        width: 100%;
-    }
-
-    .bor
-    {
-
-        margin-top: 35px;
-        margin-left: 10px;
-    }
-
-    .full
-    {
-         width: 100%;
-    }
-
-
-</style>
-        <div class="row bored full">
-            <div class="col-md-12 bor ">
-        <section id="contact" class="mapWrap">
-
-            <div id="contact-area">
-                <div class="container">
-                    <h2 class="block_title">Hey !!!</h2>
-                    <div class="row">
-                        <div class="col-xs-12">
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="moreDetails">
-                                <h2 class="con-title">More About me</h2>
-                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi repudiandae nihil aspernatur repellat temporibus doloremque sint ea laboriosam, excepturi iure </p>
-                                <ul class="address">
-                                    <li> <%= image_tag("location.png", {:style => "width:30px;"}) %><span>Jl. Siliwangi , Cicurug - Kab. Sukabumi</span></li>
-                                    <li><%= image_tag("email.png", {:style => "width:35px;"}) %><span>standmoenir2613@gmail.com</span></li>
-                                    <li><%= image_tag("phone.png", {:style => "width:30px;"}) %><span>(+62) 085723660012</span></li>
-                                    <li><%= image_tag("globe.png", {:style => "width:30px;"}) %><span><%= link_to 'Follow Me !', 'https://www.instagram.com/pimenvibritania/',target: "_blank", class: "nodekor btn btn-custom2" %></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6" align="center">
-                            <h2 class="con-title">Drop us a line</h2>
-                            <form role="form">
-                              <div class="form-group">
-                                <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
-                              </div>
-                              <div class="form-group">
-                                <input type="email" class="form-control" id="your_email" placeholder="Enter your email">
-                              </div>
-                              <div class="form-group">
-                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
-                              </div>
-
-                              <button type="submit" class="btn-custom2">Let us know</button>
-                            </form>   
-                        </div>
-                    </div>
-                </div><!-- container -->
-            </div><!-- contact-area -->
-            <div id="social">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ul class="scoialinks">
-                                <li class="normal-txt">Find me on</li>
-                                <li class="social-icons"><a class="facebook" href="https://www.facebook.com/pimenvibritania" target="_blank"></a></li>
-                                <li class="social-icons"><a class="twitter" href="https://twitter.com/pimenvibritania" target="_blank"></a></li>
-                                <li class="social-icons"><a class="linkedin" href="https://www.linkedin.com/in/pimen-vibritania-a0a940116/" target="_blank"></a></li>
-                                <li class="social-icons"><a class="google-plus" href="https://plus.google.com/u/0/103716046009330316141" target="_blank"></a></li>
-                                <li class="social-icons"><a class="wordpress" href="https://pimen1995.wordpress.com" target="_blank"></a></li>
+        <div>
+            <div class="container">
+                <h2 class="block_title" style="color: white;">Hey !!!</h2>
+                <div class="row container">
+                    <div class="col-md-6">
+                        <div class="moreDetails">
+                            <h2 class="con-title normal-txt" align="center">More about this Site</h2>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi repudiandae nihil aspernatur repellat temporibus doloremque sint ea laboriosam, excepturi iure </p>
+                            <ul class="address">
+                                <li> <%= image_tag("location.png", {:style => "width:30px;"}) %><span>Jl. Siliwangi , Cicurug - Kab. Sukabumi</span></li>
+                                <li><%= image_tag("email.png", {:style => "width:35px;"}) %><span>standmoenir2613@gmail.com</span></li>
+                                <li><%= image_tag("phone.png", {:style => "width:30px;"}) %><span>(+62) 085723660012</span></li>
+                                <li><%= image_tag("globe.png", {:style => "width:30px;"}) %><span><%= link_to 'Follow Me !', 'https://www.instagram.com/pimenvibritania/',target: "_blank", class: "nodekor btn btn-custom2" %></span></li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-md-6" align="center">
+                        <h2 class="con-title normal-txt">Give us your Opininion</h2>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="your_email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-custom2">Let us know</button>
+                        </form>   
+                    </div>
                 </div>
-            </div><!-- social -->
-        </section><!-- contact -->
-        </div>
-        </div>
-        <!-- Footer Area -->
+            </div><!-- container -->
+        </div><!-- contact-area -->
 
-        <footer class="full">
-                  
-                    <div class="nodekor" align="center">
-                        <p class="copyright">© Copyright 2014 <a href="https://www.instagram.com/pimenvibritania/" target="_blank">pimenvibritania</a></p>
-            
+        <div id="social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="scoialinks">
+                            <li class="normal-txt">Find me on</li>
+                            <li class="social-icons"><a class="facebook" href="https://www.facebook.com/pimenvibritania" target="_blank"></a></li>
+                            <li class="social-icons"><a class="twitter" href="https://twitter.com/pimenvibritania" target="_blank"></a></li>
+                            <li class="social-icons"><a class="linkedin" href="https://www.linkedin.com/in/pimen-vibritania-a0a940116/" target="_blank"></a></li>
+                            <li class="social-icons"><a class="google-plus" href="https://plus.google.com/u/0/103716046009330316141" target="_blank"></a></li>
+                            <li class="social-icons"><a class="wordpress" href="https://pimen1995.wordpress.com" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div><!-- social -->
+    </div>
+</div>
+<footer>
+    <div class="nodekor" align="center">
+        <p class="copyright block_title3">© Copyright 2014 <a href="https://www.instagram.com/pimenvibritania/" target="_blank">pimenvibritania</a>
+        </p>
+    </div>
+</footer>
+        

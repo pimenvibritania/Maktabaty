@@ -19,7 +19,7 @@
    <div class="book-shadow2" align="center ">
    <div class="average-review-rating" data-score= <%= @average_review %>><h4><b>Average Rating</b></h4></div>
    <span>Based on <%= @book.reviews.count %> reviews</span></div>
-   <%= image_tag @book.book_img.url(:book_show), class:"book-show book-shadow3", id: "myImg" %>
+   <%= image_tag @book.book_img.url(:book_show), class:"book-show", id: "myImg" %>
    <h3 class="book-shadow2" align="center">Price : <b><%= @book.price %></b></h3>
    <br><br><br>
    <%= link_to "Back to Index", root_path, class: 'btn btn-primary' %>
@@ -72,19 +72,19 @@
 		
 	</div>
 <% end %>
- 
- <div class="row">
-  
+<div class="block_title " style="color: white;">مكتبتي</div>
+<div class="row">
   <div class="col-md-4">
-   <!-- buat rate -->
-   <h3 align="center">Review</h3>
-   <div>
-    <%= render @book.reviews %><br>
-    <%  if user_signed_in? %>
-    <%= link_to "Add Review", new_book_review_path(@book), :class => "btn btn-primary" %>
-    <% end %>
-   </div>
-
+    <div class="reviews">
+    <!-- buat rate -->
+      <h3 align="center">Review</h3>
+      <div>
+        <%= render @book.reviews %><br>
+        <%  if user_signed_in? %>
+        <%= link_to "Add Review", new_book_review_path(@book), :class => "btn btn-primary" %>
+        <% end %>
+     </div>
+    </div>
   </div>
   <div class="col-md-1"></div>
   <div class="col-md-7">
@@ -98,15 +98,14 @@
    <%= render 'comments/form' %>
    <% end %>
   </div>
- </div>
- 
 </div>
-
+ 
 <!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">×</span>
   <img class="modal-content" id="img01">
   <div id="caption"></div>
+</div>
 </div>
 
 

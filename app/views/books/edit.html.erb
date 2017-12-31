@@ -1,31 +1,35 @@
-	<h1>Edit Book</h1>
+<div class="container">
+	<h1 align="center" class="block_title">Edit Book</h1>
 	<div class="col-md-2"></div>
 	<div class="col-md-8">
-	<div class="signup-form">
+	<div class="signup-form" style=" margin-top: -30px;">
 	<%= simple_form_for @book, :html => { :multipart => true } do |f| %>
 		<%= f.select :category_id, @categories %>
 		<br><br>
-		<div class="row">
-			<div class="col-md-6">
-				<p>Upload image here : <%= f.file_field :book_img %></p>
+		<div style="color: white;">
+			<div class="row">
+				<div class="col-md-6">
+					<p>Upload image here : <%= f.file_field :book_img %></p>
+				</div>
+				<div class="col-md-6">
+					<p>Upload PDF here : <%= f.file_field :document %></p>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<p>Upload PDF here : <%= f.file_field :document %></p>
+			<%= f.input :title, label: "Book Title" %>
+			<%= f.input :author %>
+			<%= f.input :tahqiq %>
+			<%= f.input :publisher %>
+			<%= f.input :volume %>
+			<%= f.input :price %>
+			<%= f.input :description %>
+			<%= f.input :summary, label: "Summary" %>
+			<%= f.input :summaryeng, label: "Review" %>
+			<div align="center">
+				<%= f.button :submit, class: "btn-custom2" %>
 			</div>
+		<% end %>
 		</div>
-		<%= f.input :title, label: "Book Title" %>
-		<%= f.input :author %>
-		<%= f.input :tahqiq %>
-		<%= f.input :publisher %>
-		<%= f.input :volume %>
-		<%= f.input :price %>
-		<%= f.input :description %>
-		<%= f.input :summary, label: "Summary" %>
-		<%= f.input :summaryeng, label: "Review" %>
-		<%= f.button :submit, class: "btn-custom" %>
-
-
-	<% end %>
-
 </div>
 </div>
+</div>
+<br>

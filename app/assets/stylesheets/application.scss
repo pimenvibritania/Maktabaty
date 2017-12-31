@@ -34,8 +34,8 @@
 
 body {
   padding-top: 70px;
-  	background-image: url(banner1.jpg);
-
+  background-image: url(banner1.jpg);
+  width: 100%;
 }
 
 
@@ -250,9 +250,17 @@ form button:hover {
 
 @mixin background-tile {
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgba(0,0,0,0.6);
   border-radius: 5px;
-  box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 3px 3px 5px 6px rgba(255,255,255,0.7);
+  padding: 1em 1em;
+}
+
+@mixin background-tile2 {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px rgba(0,0,0,0.6);
   padding: 1em 1em;
 }
 
@@ -384,7 +392,7 @@ p.alert, p.notice {
 .book-show {
   height: 475px;
   width: 325px;
-  @include background-tile;
+  @include background-tile2;
 }
 
 .book-info {
@@ -570,6 +578,36 @@ p.alert, p.notice {
     margin-left: -42%;
 }
 .block_title2:after {
+    left: 0.5em;
+    margin-right: -42%;
+}
+
+
+
+/* Block-Title small */
+
+.block_title3 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    overflow: hidden;
+}
+
+.block_title3:before,.block_title3:after {
+    content: "";
+    background: #ccc;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    width: 42%;
+    vertical-align: middle;
+}
+
+.block_title3:before {
+    right: 0.5em;
+    margin-left: -42%;
+}
+.block_title3:after {
     left: 0.5em;
     margin-right: -42%;
 }

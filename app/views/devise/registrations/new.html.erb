@@ -3,25 +3,25 @@
 	.log
 	{
 
-		border: 5px solid black;
+		color: white;
 	}
 </style>
-
+<div class="container">
 <div class="col-md-6 col-md-offset-3">
-	<div class="signup-form">
+	<div class="signup-form log"> 
 
 			<h2 align="center">Sign Up Now!</h2>
 
 			<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 			  <%= f.error_notification %>
 
-			  <div class="form-inputs black">
+			  <div class="form-inputs black log">
 			    <%= f.input :email, required: true, autofocus: true %>
 			    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
 			    <%= f.input :password_confirmation, required: true %>
 			  </div>
 
-			  <div class="form-actions">
+			  <div class="form-actions log" align="center">
 			    <%= f.button :submit, "Sign up", class: 'btn-custom2' %>
 			  </div>
 			<% end %>
@@ -29,3 +29,5 @@
 			<%= render "devise/shared/links" %>
 	</div>
 </div>
+</div>
+<br>
