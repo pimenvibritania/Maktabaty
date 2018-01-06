@@ -1,6 +1,6 @@
 <%= form_for([@book,@book.comments.build]) do |f| %>
-	<p>
-		<%= current_user.email %>
+	<p class="desc">
+		Post as : <%= current_user.email %>
 	</p>
 	<p>
 		
@@ -9,7 +9,7 @@
 	<br>
 	<p>
 		
-		<%= f.submit %>
+		<%= f.button :POST, class: "btn-custom2" %>
 	</p>
 
 	<% end %>

@@ -73,7 +73,7 @@
 		
 	</div>
 <% end %>
-<div class="block_title " style="color: white;">مكتبتي</div>
+<div class="block_title " style="color: white;" id="social">مكتبتي</div>
 
 <div class="row" style="margin-top: -50px;">
 
@@ -99,14 +99,14 @@
   <div class="col-md-1"></div>
 
   <div class="col-md-7 reviewsx">
-   <h2 align="center">Discussion</h2>
+   <h2 align="center" class="desc">Bahtsul Masaail</h2>
     
-     <h4> <%= @book.comments.count %> Comments </h4>
+     <h4 class="desc"> <%= @book.comments.count %> Thread available </h4>
      <%= render @book.comments %>
 
      <% if user_signed_in? %>
 
-     <h3>Add a Comments : </h3>
+     <h3 class="desc">Add a new thread : </h3>
      <%= render 'comments/form' %>
      <% end %>
     
