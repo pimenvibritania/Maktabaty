@@ -1,14 +1,19 @@
 <% if user_signed_in? %>
 
-	<h1 align="center" style="background-color: black; color: white;"><%= @thread.body %></h1>
+<h1 class="block_title book-shadow3" >Bahtsul Masaail</h1>
+<div class="container reviews">
+	<div style="background-color: rgba(0,0,0,0.7); height: 70px; padding-top: 20px;" class="book-shadow3">
+		<h1 align="center" style=" color: white;"><%= @thread.body %></h1>
+	</div>
 
-	<%= render @thread.discussion %>
 
+		<%= render @thread.discussion %>
 	<%= form_tag do %>
 		<%= text_field_tag :nama, params[:nama], class: "form-control-plaintext", :readonly => true, value: current_user.email %>
-		<%= text_field_tag :body, params[:body] %>
-		<%= submit_tag 'toskol' %>
+		<%= text_area_tag :body, params[:body] %><br>
+		<%= submit_tag 'toskol' , class: 'btn-custom2' %>
 	<% end %>
-<% else %>
-<% redirect_to login_path %>
-<% end %>
+	<% else %>
+		<% redirect_to login_path %>
+	<% end %>
+</div>

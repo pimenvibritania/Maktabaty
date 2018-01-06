@@ -11,4 +11,5 @@ class ThreadController < ApplicationController
   def show
   	@thread = Comment.find(params[:id])
   end
+
 end
