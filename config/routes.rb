@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get  "/thread.:id" , to: 'thread#show'
   post "/thread.:id" , to: 'thread#create'
   root 'books#index'
+  delete "/discussion/.:id" , to: 'discussion#delete'
 
 end

@@ -2,18 +2,25 @@
 
 <h1 class="block_title book-shadow3" >Bahtsul Masaail</h1>
 <div class="container reviews">
+	   <div class="well well-sm glyphicon glyphicon-tags">  Thread Starter : <%= @thread.nama %></div>
+
 	<div style="background-color: rgba(0,0,0,0.7); height: 70px; padding-top: 20px;" class="book-shadow3">
-		<h1 align="center" style=" color: white;"><%= @thread.body %></h1>
-	</div>
+		<h1 align="center" style=" color: white;">" <%= @thread.body %> "</h1>
+	</div><br>
 
 
 		<%= render @thread.discussion %>
+	<br>
+	<div class="block_title3" style="color: white;"> Reply here</div>
+	<div class="book-shadow3 container">
 	<%= form_tag do %>
-		<%= text_field_tag :nama, params[:nama], class: "form-control-plaintext", :readonly => true, value: current_user.email %>
-		<%= text_area_tag :body, params[:body] %><br>
-		<%= submit_tag 'toskol' , class: 'btn-custom2' %>
+		<p style="color: white;">Reply as : <b><%= text_field_tag :nama, params[:nama], class: "form-control-plaintext", :readonly => true, value: current_user.email %></b></p>
+		<%= text_area_tag :body, params[:body], :placeholder=>'comment here.....' %><br><br>
+		<%= submit_tag 'Reply' , class: 'btn-custom2' %>
 	<% end %>
 	<% else %>
 		<% redirect_to login_path %>
 	<% end %>
+	</div>
 </div>
+<br>

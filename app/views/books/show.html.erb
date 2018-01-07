@@ -105,8 +105,8 @@
      <%= render @book.comments %>
 
      <% if user_signed_in? %>
-
-     <h3 class="desc">Add a new thread : </h3>
+     <div class="block_title3" style="color: white;">Add new thread</div>
+     
      <%= render 'comments/form' %>
      <% end %>
     
