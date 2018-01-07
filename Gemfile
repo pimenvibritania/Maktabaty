@@ -34,6 +34,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pdfjs_viewer-rails' 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'factory_girl_rails'
+gem 'ffaker'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
