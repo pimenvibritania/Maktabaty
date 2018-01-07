@@ -80,7 +80,7 @@
   <div class="col-md-4">
     <div class="reviews">
     <!-- buat rate -->
-      <h3 align="center" style="color: white;">Review</h3>
+      <h2 align="center" style="color: white;" class="normal-txt2">Review</h2>
 
       <div>
         <%= render @book.reviews %><br>
@@ -99,7 +99,7 @@
   <div class="col-md-1"></div>
 
   <div class="col-md-7 reviewsx">
-   <h2 align="center" class="desc">Bahtsul Masaail</h2>
+   <h2 align="center" class="desc normal-txt2">Bahtsul Masaail</h2>
     
      <h4 class="desc"> <%= @book.comments.count %> Thread available </h4>
      <%= render @book.comments %>
