@@ -43,6 +43,10 @@
 
 * seed_dump
 
+* Factory_girl_rails #for devise rspec testing
+
+* ffaker #for devise rspec testing
+
 
 ## Members
 
