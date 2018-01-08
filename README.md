@@ -2,6 +2,12 @@
 <p align="center" ><img width="400" height="400" src= "app/assets/images/favicon.png"/></p>
 
 <h1 align="center">مكتبتي | مجموعة من أوراق العلماء</h1>
+<h1 align="center">Maktabaty Book Review And Sharing</h1>
+
+
+## Deskripsi Aplikasi
+  
+  ”Maktabaty Book Review And Sharing” merupakan sebuah aplikasi berbasis web yang dibuat dengan tujuan untuk mempermudah Pelajar , Mahasiswa, Santri, ataupun Masyarakat umum untuk mendapatkan informasi, e-book , dan forum diskusi tentang ‘Kutubut Turats’  atau yang dikenal baik oleh masyarakat luas yaitu kitab kuning, yang merujuk kepada kitab-kitab tradisional yang berisi pelajaran-pelajaran agama islam (diraasah al-islamiyyah) yang diajarkan pada Pondok-pondok pesantren, mulai dari Fiqh, Ilmu Tafsir, Ushulul Fiqh,  Tata Bahasa Arab (ilmu nahwu dan ilmu sharf), dan ilmu-ilmu keislaman lainnya, hingga pada ilmu sosial dan kemasyarakatan (muamalah). Dikenal juga dengan kitab gundul karena memang tidak memiliki harakat (fathah, kasrah, dhammah, sukun), tidak seperti kitab Al-Qur'an. Oleh sebab itu, untuk bisa membaca kitab kuning berikut arti harfiah kalimat per kalimat agar bisa dipahami secara menyeluruh, dibutuhkan waktu belajar yang relatif lama.
 
 ## Tools Used
 
