@@ -63,7 +63,7 @@
           <div class="container">
             <div class="carousel-caption bcor">
               <h1>مكتبتي | مجموعة من أوراق العلماء</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p>Share your information books here!</p>
 
               <% if !user_signed_in? %>
                 <%= link_to "Sign Up Now", new_user_registration_path, class: 'btn btn-lg btn-custom2' %> 
@@ -76,7 +76,7 @@
           <div class="container">
             <div class="carousel-caption bcor">
               <h1>وخير جليس في الزمان كتاب</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p>Lets discuss with us here!</p>
               <% if !user_signed_in? %>
                 <%= link_to "Sign Up Now", new_user_registration_path, class: 'btn btn-lg btn-custom2' %> 
               <% end %>
@@ -88,7 +88,7 @@
           <div class="container">
             <div class="carousel-caption bcor">
               <h1>العلم صيد والكتابة قيده , قيّد صيودك بالحبال الواثقة</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p>Look at reviews all of books here!</p>
               <% if !user_signed_in? %>
                 <%= link_to "Sign Up Now", new_user_registration_path, class: 'btn btn-lg btn-custom2' %> 
               <% end %>
@@ -116,7 +116,7 @@
 		<div class="row">
       <h3 class="block_title2" align="center" style="color: white; margin-top: -30px;">INDEX</h3>
 		 <% @books.each do |book| %>
-		 <div class="col-md-3 book-shadow2 containera" align="center" style="margin-top: -30px;">
+		 <div class="col-md-3 book-shadow2 containera" align="center" style="margin-top: -30px; margin-bottom: 50px;">
 		 	<a href="/books/<%=book.id %>">
 		 		<%= image_tag book.book_img.url(:book_index), class: 'book image book-shadow4' %>
 		 	</a>

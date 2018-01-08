@@ -10,7 +10,7 @@ feature "Signins" do
 		
 	end
 
-	scenario "visiting th site to sign in" do
+	scenario "visiting the site to sign in" do
 		visit  root_path 
 		click_link "Login"
 		fill_in_signin_fields

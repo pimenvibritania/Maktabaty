@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   root 'books#index'
   delete "/discussion/.:id" , to: 'discussion#delete'
 
+  get "/books/:book_id/reviews/new" , to: 'reviews#new'
+  post  "/books/:book_id/reviews" , to: 'reviews#create'
+
+  get "/book.:id" , to: 'books#show'
 end
