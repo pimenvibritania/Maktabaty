@@ -50,12 +50,87 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 ## Modeling
 
-<p align="center" ><img width="400" height="400" src= "app/assets/images/logical.png"/></p>
+<p align="center" ><img width="400" height="400" src= "app/assets/images/Logical.png"/></p>
 <p align="center" ><img width="400" height="400" src= "app/assets/images/scema.png"/></p>
 
 ## Database Scheme
 
+<tt>create_table "books", force: :cascade do |t|</tt>
+    <tt>t.string "title"</tt>
+    <tt>t.text "description"</tt>
+    <tt>t.string "author"</tt>
+    <tt>t.datetime "created_at", null: false</tt>
+    <tt>t.datetime "updated_at", null: false</tt>
+    <tt>t.text "summary"</tt>
+    <tt>t.text "summaryeng"</tt>
+    <tt>t.integer "user_id"</tt>
+    <tt>t.integer "category_id"</tt>
+    <tt>t.string "book_img_file_name"</tt>
+    <tt>t.string "book_img_content_type"</tt>
+    <tt>t.integer "book_img_file_size"</tt>
+    <tt>t.datetime "book_img_updated_at"</tt>
+    <tt>t.string "document_file_name"</tt>
+    <tt>t.string "document_content_type"</tt>
+    <tt>t.integer "document_file_size"</tt>
+    <tt>t.datetime "document_updated_at"</tt>
+    <tt>t.string "tahqiq"</tt>
+    <tt>t.string "publisher"</tt>
+    <tt>t.string "volume"</tt>
+    <tt>t.string "price"</tt>
+  <tt>end</tt>
 
+  <tt>create_table "categories", force: :cascade do |t|</tt>
+    <tt>t.string "nama"</tt>
+    <tt>t.datetime "created_at", null: false</tt>
+    <tt>t.datetime "updated_at", null: false</tt>
+  <tt>end</tt>
+
+  <tt>create_table "comments", force: :cascade do |t|</tt>
+    <tt>t.string "nama"</tt>
+    <tt>t.text "body"</tt>
+    <tt>t.integer "book_id"</tt>
+    <tt>t.datetime "created_at", null: false</tt>
+    <tt>t.datetime "updated_at", null: false</tt>
+    <tt>t.index ["book_id"], name: "index_comments_on_book_id"</tt>
+  <tt>end</tt>
+
+  <tt>create_table "discussions", force: :cascade do |t|</tt>
+    <tt>t.string "nama"</tt>
+    <tt>t.text "body"</tt>
+    <tt>t.integer "comment_id"</tt>
+    <tt>t.datetime "created_at", null: false</tt>
+    <tt>t.datetime "updated_at", null: false</tt>
+    <tt>t.index ["comment_id"], name: "index_discussions_on_comment_id"</tt>
+  <tt>end</tt>
+
+  <tt>create_table "reviews", force: :cascade do |t|</tt>
+    <tt>t.integer "rating"</tt>
+    <tt>t.text "comment"</tt>
+    <tt>t.datetime "created_at", null: false</tt>
+    <tt>t.datetime "updated_at", null: false</tt>
+    <tt>t.integer "user_id"</tt>
+    <tt>t.integer "book_id"</tt>
+    <tt>t.string "nama"</tt>
+  <tt>end</tt>
+
+  <tt>create_table "users", force: :cascade do |t|</tt>
+    <tt>t.string "email", default: "", null: false</tt>
+    <tt>t.string "encrypted_password", default: "", null: false</tt>
+    <tt>t.string "reset_password_token"</tt>
+    <tt>t.datetime "reset_password_sent_at"</tt>
+    <tt>t.datetime "remember_created_at"</tt>
+    <tt>t.integer "sign_in_count", default: 0, null: false</tt>
+    <tt>t.datetime "current_sign_in_at"</tt>
+    <tt>t.datetime "last_sign_in_at"</tt>
+    <tt>t.string "current_sign_in_ip"</tt>
+    <tt>t.string "last_sign_in_ip"</tt>
+    <tt>t.datetime "created_at", null: false</tt>
+    <tt>t.datetime "updated_at", null: false</tt>
+    <tt>t.index ["email"], name: "index_users_on_email", unique: true</tt>
+    <tt>t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true</tt>
+  <tt>end</tt>
+
+# Additional
 
 ## Tools Used
 
@@ -101,8 +176,18 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 * ffaker #for devise rspec testing
 
+# Demo
 
-## Members
+## Application Demo
+
+<tt>pimenvibritania:2613</tt>
+
+## Continous Integration
+
+<tt>https://travis-ci.org/pimenvibritania/Maktabaty</tt>
+
+
+# Members
 
 - **[PIRMAN ABDUROHMAN 1157050127](https://www.instagram.com/pimenvibritania/)**
 * HAFIZH JISMI T 1157050065
