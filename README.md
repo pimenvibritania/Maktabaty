@@ -26,10 +26,10 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 ## Framework
 
-* Front-End Framework
+* Front-End Framework<br>
     <tt>Bootstrap-Sass</tt>
-
-* Back-End Framework
+<br>
+* Back-End Framework<br>
     <tt>Ruby on Rails (ROR)</tt>
 
 ## Features
@@ -50,86 +50,86 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 ## Modeling
 
-<p align="center" ><img width="400" height="400" src= "app/assets/images/Logical.png"/></p>
-<p align="center" ><img width="400" height="400" src= "app/assets/images/scema.png"/></p>
+<p align="center" ><img width="844" height="476" src= "app/assets/images/Logical.png"/></p>
+<p align="center" ><img width="844" height="476" src= "app/assets/images/scema.png"/></p>
 
 ## Database Scheme
 
-<tt>create_table "books", force: :cascade do |t|</tt>
-    <tt>t.string "title"</tt>
-    <tt>t.text "description"</tt>
-    <tt>t.string "author"</tt>
-    <tt>t.datetime "created_at", null: false</tt>
-    <tt>t.datetime "updated_at", null: false</tt>
-    <tt>t.text "summary"</tt>
-    <tt>t.text "summaryeng"</tt>
-    <tt>t.integer "user_id"</tt>
-    <tt>t.integer "category_id"</tt>
-    <tt>t.string "book_img_file_name"</tt>
-    <tt>t.string "book_img_content_type"</tt>
-    <tt>t.integer "book_img_file_size"</tt>
-    <tt>t.datetime "book_img_updated_at"</tt>
-    <tt>t.string "document_file_name"</tt>
-    <tt>t.string "document_content_type"</tt>
-    <tt>t.integer "document_file_size"</tt>
-    <tt>t.datetime "document_updated_at"</tt>
-    <tt>t.string "tahqiq"</tt>
-    <tt>t.string "publisher"</tt>
-    <tt>t.string "volume"</tt>
-    <tt>t.string "price"</tt>
-  <tt>end</tt>
-
-  <tt>create_table "categories", force: :cascade do |t|</tt>
-    <tt>t.string "nama"</tt>
-    <tt>t.datetime "created_at", null: false</tt>
-    <tt>t.datetime "updated_at", null: false</tt>
-  <tt>end</tt>
-
-  <tt>create_table "comments", force: :cascade do |t|</tt>
-    <tt>t.string "nama"</tt>
-    <tt>t.text "body"</tt>
-    <tt>t.integer "book_id"</tt>
-    <tt>t.datetime "created_at", null: false</tt>
-    <tt>t.datetime "updated_at", null: false</tt>
-    <tt>t.index ["book_id"], name: "index_comments_on_book_id"</tt>
-  <tt>end</tt>
-
-  <tt>create_table "discussions", force: :cascade do |t|</tt>
-    <tt>t.string "nama"</tt>
-    <tt>t.text "body"</tt>
-    <tt>t.integer "comment_id"</tt>
-    <tt>t.datetime "created_at", null: false</tt>
-    <tt>t.datetime "updated_at", null: false</tt>
-    <tt>t.index ["comment_id"], name: "index_discussions_on_comment_id"</tt>
-  <tt>end</tt>
-
-  <tt>create_table "reviews", force: :cascade do |t|</tt>
-    <tt>t.integer "rating"</tt>
-    <tt>t.text "comment"</tt>
-    <tt>t.datetime "created_at", null: false</tt>
-    <tt>t.datetime "updated_at", null: false</tt>
-    <tt>t.integer "user_id"</tt>
-    <tt>t.integer "book_id"</tt>
-    <tt>t.string "nama"</tt>
-  <tt>end</tt>
-
-  <tt>create_table "users", force: :cascade do |t|</tt>
-    <tt>t.string "email", default: "", null: false</tt>
-    <tt>t.string "encrypted_password", default: "", null: false</tt>
-    <tt>t.string "reset_password_token"</tt>
-    <tt>t.datetime "reset_password_sent_at"</tt>
-    <tt>t.datetime "remember_created_at"</tt>
-    <tt>t.integer "sign_in_count", default: 0, null: false</tt>
-    <tt>t.datetime "current_sign_in_at"</tt>
-    <tt>t.datetime "last_sign_in_at"</tt>
-    <tt>t.string "current_sign_in_ip"</tt>
-    <tt>t.string "last_sign_in_ip"</tt>
-    <tt>t.datetime "created_at", null: false</tt>
-    <tt>t.datetime "updated_at", null: false</tt>
-    <tt>t.index ["email"], name: "index_users_on_email", unique: true</tt>
-    <tt>t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true</tt>
-  <tt>end</tt>
-
+<tt>create_table "books", force: :cascade do |t|</tt><br>
+    <tt>t.string "title"</tt><br>
+    <tt>t.text "description"</tt><br>
+    <tt>t.string "author"</tt><br>
+    <tt>t.datetime "created_at", null: false</tt><br>
+    <tt>t.datetime "updated_at", null: false</tt><br>
+    <tt>t.text "summary"</tt><br>
+    <tt>t.text "summaryeng"</tt><br>
+    <tt>t.integer "user_id"</tt><br>
+    <tt>t.integer "category_id"</tt><br>
+    <tt>t.string "book_img_file_name"</tt><br>
+    <tt>t.string "book_img_content_type"</tt><br>
+    <tt>t.integer "book_img_file_size"</tt><br>
+    <tt>t.datetime "book_img_updated_at"</tt><br>
+    <tt>t.string "document_file_name"</tt><br>
+    <tt>t.string "document_content_type"</tt><br>
+    <tt>t.integer "document_file_size"</tt><br>
+    <tt>t.datetime "document_updated_at"</tt><br>
+    <tt>t.string "tahqiq"</tt><br>
+    <tt>t.string "publisher"</tt><br>
+    <tt>t.string "volume"</tt><br>
+    <tt>t.string "price"</tt><br>
+  <tt>end</tt><br>
+<br>
+  <tt>create_table "categories", force: :cascade do |t|</tt><br>
+    <tt>t.string "nama"</tt><br>
+    <tt>t.datetime "created_at", null: false</tt><br>
+    <tt>t.datetime "updated_at", null: false</tt><br>
+  <tt>end</tt><br>
+<br>
+  <tt>create_table "comments", force: :cascade do |t|</tt><br>
+    <tt>t.string "nama"</tt><br>
+    <tt>t.text "body"</tt><br>
+    <tt>t.integer "book_id"</tt><br>
+    <tt>t.datetime "created_at", null: false</tt><br>
+    <tt>t.datetime "updated_at", null: false</tt><br>
+    <tt>t.index ["book_id"], name: "index_comments_on_book_id"</tt><br>
+  <tt>end</tt><br>
+<br>
+  <tt>create_table "discussions", force: :cascade do |t|</tt><br>
+    <tt>t.string "nama"</tt><br>
+    <tt>t.text "body"</tt><br>
+    <tt>t.integer "comment_id"</tt><br>
+    <tt>t.datetime "created_at", null: false</tt><br>
+    <tt>t.datetime "updated_at", null: false</tt><br>
+    <tt>t.index ["comment_id"], name: "index_discussions_on_comment_id"</tt><br>
+  <tt>end</tt><br>
+<br>
+  <tt>create_table "reviews", force: :cascade do |t|</tt><br>
+    <tt>t.integer "rating"</tt><br>
+    <tt>t.text "comment"</tt><br>
+    <tt>t.datetime "created_at", null: false</tt><br>
+    <tt>t.datetime "updated_at", null: false</tt><br>
+    <tt>t.integer "user_id"</tt><br>
+    <tt>t.integer "book_id"</tt><br>
+    <tt>t.string "nama"</tt><br>
+  <tt>end</tt><br>
+<br>
+  <tt>create_table "users", force: :cascade do |t|</tt><br>
+    <tt>t.string "email", default: "", null: false</tt><br>
+    <tt>t.string "encrypted_password", default: "", null: false</tt><br>
+    <tt>t.string "reset_password_token"</tt><br>
+    <tt>t.datetime "reset_password_sent_at"</tt><br>
+    <tt>t.datetime "remember_created_at"</tt><br>
+    <tt>t.integer "sign_in_count", default: 0, null: false</tt><br>
+    <tt>t.datetime "current_sign_in_at"</tt><br>
+    <tt>t.datetime "last_sign_in_at"</tt><br>
+    <tt>t.string "current_sign_in_ip"</tt><br>
+    <tt>t.string "last_sign_in_ip"</tt><br>
+    <tt>t.datetime "created_at", null: false</tt><br>
+    <tt>t.datetime "updated_at", null: false</tt><br>
+    <tt>t.index ["email"], name: "index_users_on_email", unique: true</tt><br>
+    <tt>t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true</tt><br>
+  <tt>end</tt><br>
+<br>
 # Additional
 
 ## Tools Used
