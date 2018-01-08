@@ -28,7 +28,7 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 * Front-End Framework<br>
     <tt>Bootstrap-Sass</tt>
-<br>
+    
 * Back-End Framework<br>
     <tt>Ruby on Rails (ROR)</tt>
 
