@@ -149,7 +149,7 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 * Ubuntu 16.04 LTS
 
-* Ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-linux]
+* Ruby 2.5.3
 
 * Ruby on Rails 5.1.4 
 
