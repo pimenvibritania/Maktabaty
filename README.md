@@ -48,6 +48,19 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 * Add and see a comments of thread.
 
+## Installing
+
+* Clone this repo
+
+* Install or Update your bundle
+
+* migrate db
+
+* seed db , if error change enctypted_password to password and change password to plain text
+
+* add category in console ' c = Category.new( nama: "Ushul Fiqh" ) ' then ' c.save! '
+
+
 ## Modeling
 
 <p align="center" ><img width="844" height="476" src= "app/assets/images/Logical.png"/></p>
