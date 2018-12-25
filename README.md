@@ -16,9 +16,13 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 #  Platform
 
-## Programming Language
+## Language
 
 * Ruby
+
+* JavaScript
+
+* CSS
 
 ## Framework
 
