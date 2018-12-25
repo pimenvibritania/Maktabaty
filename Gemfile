@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.2'
+ruby '2.5.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -34,7 +34,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pdfjs_viewer-rails' 
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
-gem 'factory_girl_rails'
+gem 'factory_bot_rails'
 gem 'ffaker'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -51,7 +51,9 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rspec-rails'
-
+  gem "factory_bot_rails"
+  # or
+  gem "factory_bot"
   gem "sqlite3", :platform => [:ruby, :mswin, :mingw]
 
 end

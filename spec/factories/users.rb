@@ -1,4 +1,6 @@
-FactoryGirl.define do 
+require 'factory_bot_rails'
+
+FactoryBot.define do 
 	factory :user do
 
 		email { FFaker::Internet.email}
