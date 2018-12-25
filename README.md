@@ -20,10 +20,6 @@ User ini merupakan user yang memiliki akses untuk registrasi, login, logout, mem
 
 * Ruby
 
-* HTML (Hyper Text Markup Language)
-
-* CSS (Cascading Style Sheet)
-
 ## Framework
 
 * Front-End Framework<br>
